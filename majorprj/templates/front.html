@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="/static/frontpage.css">
+    <title>C-DOC | Livestock Management</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="/static/images/logo.png">
+                    <h2><span class="danger">C-DOC</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="expenditure.html">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Expenditure
+                    </h3>
+                </a>
+                <a href="diseasepredictor.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Disease Predictor</h3>
+                </a>
+                <a href="contactus.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Contact Us</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+            <section class="table__header">
+                <h1>Cattle's Data</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="images/search.png" alt="">
+                </div>
+                <div class="export__file">
+                    <label for="export-file" class="export__file-btn" title="Export File"></label>
+                    <input type="checkbox" id="export-file">
+                    <div class="export__file-options">
+                        <label>Export As &nbsp; &#10140;</label>
+                        <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                        <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                        <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                    </div>
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Breed <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Gender/sex <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Date of Birth <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Weight <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Milk <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> Angus </td>
+                            <td> M </td>
+                            <td> 23 Sep,2016 </td>
+                            <td> 120 Kg </td>
+                            <td> <strong> 23 Lr </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td> Angus </td>
+                            <td> M </td>
+                            <td> 23 Sep,2016 </td>
+                            <td> 120 Kg </td>
+                            <td> <strong> 23 Lr </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td> Angus </td>
+                            <td> M </td>
+                            <td> 23 Sep,2016 </td>
+                            <td> 120 Kg </td>
+                            <td> <strong> 23 Lr </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td> Angus </td>
+                            <td> M </td>
+                            <td> 23 Sep,2016 </td>
+                            <td> 120 Kg </td>
+                            <td> <strong> 23 Lr </strong></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td> Angus </td>
+                            <td> M </td>
+                            <td> 23 Sep,2016 </td>
+                            <td> 120 Kg </td>
+                            <td> <strong> 23 Lr </strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Cattles</h3>
+                            <h1 class ="number" >200 </h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Christin</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/christin.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="front.js"></script>
+    <script>import logout from "logout.js";</script>
+</body>
+
+</html>

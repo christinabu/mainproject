@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 410px;
+    max-width: 100%;
+    height: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+}
+
+form {
+    display: contents;
+    height: fit-content;
+    margin-top: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: #333; /* Optional: Set text color */
+}
+
+/* Added styles for the form field */
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.file-input-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f4f4f4;
+    height: 100px;
+    width: 350px;
+    padding: 10px;
+    border: 2px solid #78aeff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style the label as a button */
+.file-input-label:hover {
+    background-color: #f0f0f0;
+}
+
+.file-name {
+    text-align-last: center;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+/* Added styles for the Predict button */
+.button {
+    top: 30px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
